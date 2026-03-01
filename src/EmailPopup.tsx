@@ -62,7 +62,7 @@ export default function EmailPopup({
         payload.tips = reportData.tips;
       }
 
-      const response = await fetch('/carbon-calculator/save-email.php', {
+      const response = await fetch('https://earthlyours.com/carbon-calculator/save-email.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
